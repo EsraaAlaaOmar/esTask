@@ -1,8 +1,10 @@
 import React from "react";
 import {Container,Row,Col} from 'react-bootstrap'
 import{BsHeart,BsPlusLg}from "react-icons/bs"
+import products from "../data";
 
 const Product =() =>{
+ 
     return(
   <div>
     <div className='product'>
