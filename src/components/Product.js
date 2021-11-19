@@ -3,16 +3,16 @@ import {Container,Row,Col} from 'react-bootstrap'
 import{BsHeart,BsPlusLg}from "react-icons/bs"
 import products from "../data";
 
-const Product =() =>{
+const Product =({name,image,price}) =>{
  
     return(
   <div>
     <div className='product'>
           
-          <h5>details</h5>
-          <img  src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzZLODnJfDTlFvk_x3bUHEn4nHwZYtQB4x4g&usqp=CAU' />
+          <h5>{name}</h5>
+          <img  src={image} />
           <br />
-          <span>Price </span>
+          <span>${price} </span>
           <div className='action'>
             <Row>
               <Col>

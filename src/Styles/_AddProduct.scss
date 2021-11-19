@@ -1,0 +1,27 @@
+.add{
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    width: 60%;
+  //  margin: auto;
+  .info{
+    margin-top:5px;
+  }
+  input{
+   // text-align: center;
+    width: 100%;
+  }
+  label{
+   float: left;
+   font-weight: bold;
+   //margin-top: 10px;
+  }
+  textarea{
+    width: 100%;
+    height: 100px;
+  }
+  .submit{
+    width: 30%;
+    height: 40px;
+  }
+}

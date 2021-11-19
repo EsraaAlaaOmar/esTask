@@ -2,22 +2,26 @@ import './App.scss'
 
 import Header from './components/Header';
 import Product from './components/Product';
-import products from './data';
+import Products from './components/Products';
+import AddProduct from './components/addProduct'
 
 import {Container,Row,Col} from 'react-bootstrap'
-
+import { Route, Routes ,BrowserRouter as Router} from 'react-router-dom'
 
 function App() {
-  const renderedProducts =  products.map((p)=><Col sm={6} lg={3}> <Product /> </Col>)
+  
   return (
    <div>
-
+ <Router>
     <Header /> 
-    <Container>
-    <Row>
-    {renderedProducts}
-    </Row>
-  </Container>
+   
+       <Routes>
+                <Route path="/" element={<Products />} exact />
+                <Route path="/add" element={<AddProduct />} />
+               
+            </Routes>
+     </Router>       
+    
   </div>
   );
 }
