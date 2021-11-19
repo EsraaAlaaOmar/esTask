@@ -1,13 +1,27 @@
-import { ADD_PRODUCT } from "./types"
+import { ADD_PRODUCT , ADD_TOWISHLIST,ADD_TOCARD} from "./types"
 
 
 
 export const AddNewProduct = (pdoduct_info)  => {
-    const {name,price,fImage,secImage,thirImage,describtion}=pdoduct_info
-    console.log(pdoduct_info,'from actions')
     return{
         type:ADD_PRODUCT,
         payload: pdoduct_info
     }
-    console.log(pdoduct_info,'from actions')
+ 
+}
+
+export const AddtowishList = (name)  => {
+    return{
+        type:ADD_TOWISHLIST,
+        payload: name
+    }
+ 
+}
+
+export const ADDToCard = (name)  => {
+    return{
+        type:ADD_TOCARD,
+        payload: name
+    }
+ 
 }

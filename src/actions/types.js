@@ -1,3 +1,4 @@
 export const ADD_PRODUCT ='ADD_PRODUCT'
 
-
+export const ADD_TOWISHLIST ='ADD_TOWISHLIST'
+export const ADD_TOCARD ='ADD_TOCARD'
