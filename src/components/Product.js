@@ -4,7 +4,11 @@ import{BsHeart,BsPlusLg}from "react-icons/bs"
 import products from "../data";
 
 const Product =({name,image,price}) =>{
- 
+
+
+ const onClick = (value)=>{
+  console.log(value)
+ }
     return(
   <div>
     <div className='product'>
@@ -16,10 +20,12 @@ const Product =({name,image,price}) =>{
           <div className='action'>
             <Row>
               <Col>
-                  <BsPlusLg />
+                  <button onClick={()=>onClick(name)}> 
+                  <BsPlusLg  />
                   <span>
                     &nbsp; card
                   </span>
+                  </button>
               </Col>
               <Col>
                  <div className='rtl'>
@@ -27,7 +33,7 @@ const Product =({name,image,price}) =>{
                     Wishlist
                    </span>
                    &nbsp;
-                   <BsHeart />
+                   <BsHeart  onClick={()=>onClick(name)}/>
                   </div>
 
               </Col>

@@ -3,7 +3,7 @@ import { useState } from "react";
 import axios from 'axios'
 
 import {Col,Row } from "react-bootstrap";
-const UploadPhoto=({name})=>{
+const UploadPhoto=({name,setImg})=>{
 const [ImageSelector,setImageSelector]=useState('')
     const uploadImage=(e)=>{
         e.preventDefault()
@@ -12,7 +12,7 @@ const [ImageSelector,setImageSelector]=useState('')
         formData.append('upload_preset','ozqur3ms')
         axios.post('https://api.cloudinary.com/v1_1/djrm6ygpv/image/upload',formData).then((res)=>{
             console.log(res)
-       //     setImageImageUrl(res.data.secure_url)
+            setImg(res.data.secure_url)
           
 
           
