@@ -5,7 +5,10 @@ import{BsHeart,BsPlusLg}from "react-icons/bs"
 import products from "../data";
 import {AddtowishList,ADDToCard} from '../actions/index'
 import PropTypes from 'prop-types'
-const Product =({name,image,price,AddtowishList,ADDToCard,wishlist,card}) =>{
+
+
+import Slider from "./Slider";
+const Product =({name,image,fImage,secImage,thirImage,price,AddtowishList,ADDToCard,wishlist,card}) =>{
 
 
  const UpdateWishlist = (value)=>{
@@ -20,22 +23,23 @@ const Product =({name,image,price,AddtowishList,ADDToCard,wishlist,card}) =>{
     <div className='product'>
           
           <h5>{name}</h5>
-          <img  src={image} />
+          {/* <img  src={image} /> */}
+          <Slider fImage={fImage} secImage={secImage} thirImage={thirImage}/>
           <br />
-          <span>${price} </span>
+          <span className='price'>${price} </span>
           <div className='action'>
             <Row>
               <Col>
-                  <button onClick={()=>UpdateWishlist(name)}> 
+                  <div className='click' onClick={()=>updateCard(name)}> 
                   <BsPlusLg  />
                   <span>
                     &nbsp; card
                   </span>
-                  </button>
+                  </div>
               </Col>
               <Col>
-                 <div className='rtl' onClick={()=>updateCard(name)}>
-                   <span>
+                 <div className='rtl click' onClick={()=>UpdateWishlist(name)}>
+                   <span  >
                     Wishlist
                    </span>
                    &nbsp;

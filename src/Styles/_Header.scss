@@ -4,12 +4,11 @@
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #fff;
+   
     font-size: 40px;
     text-align: center;
     box-shadow: 0px .5px #888888;
-    font-family: cursive;
-    height: 100px;
+   
     img{
         height: 50px;
         margin: 10px;
@@ -21,11 +20,36 @@
         font-size: 24px;
         color:#fff;
         .list{
+            text-align: left;
             margin: auto;
             border: 1px solid rgb(221, 220, 220);
             border-radius: 10px;
             width: 300px;
+            color: #000;
+            z-index: 10000;
+            background-color: #fff;
+            font-size: 20px;
+            .listItem{
+               
+                border: 1px solid rgb(221, 220, 220);
+                cursor: pointer;
 
+            }
+            .head{
+                text-align: center;
+                background-color:#5dbccb;
+                width: 300px;color: #fff;
+                margin-top: -2px;
+            }
+          
+          
+        }
+        span{
+            font-size: 16px;
+           // margin-right: 2px;
+            margin-top: -15px;
+            cursor: pointer;
+         
         }
     }
 }

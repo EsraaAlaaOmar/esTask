@@ -44,8 +44,10 @@ const AddProduct =({AddNewProduct}) =>{
    <> 
    <Container>
     <div className='add'>
-       <Link to='/'>  products  </Link>
-        <h5>Add a Product</h5>
+       
+         <Link to='/'> <span className='link'> Show Products  </span>   </Link>
+        <div className="Create">
+        <h5>Create a Product</h5>
 
        <form onSubmit = {e=>onSubmit(e)}> 
            <div className='info'>
@@ -67,10 +69,12 @@ const AddProduct =({AddNewProduct}) =>{
            <UploadPhoto name="Second Image" setImg={setSecImg} />
            <UploadPhoto name="Third Image" setImg={setthirdImg} />
            <br/>
-           <input type='submit' className='submit'/>
+           <input type='submit' className='submit' value='Create'/>
 
        </form>
+       </div>
     </div>
+
     </Container>  
     
    </> 

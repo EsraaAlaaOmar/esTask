@@ -30,7 +30,7 @@ const [ImageSelector,setImageSelector]=useState('')
                             <input type='file'  onChange={e=>{setImageSelector( (e.target.files[0]))}}/>
                         </Col>  
                         <Col>
-                        <button onClick={uploadImage}>upload</button>
+                        <button className='upload' onClick={uploadImage}>upload</button>
                         </Col>    
                     </Row>
          </div>

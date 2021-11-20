@@ -1,6 +1,6 @@
 
 .product{
-    margin-top: 100px;
+    margin-top: 5px;
     width: 100%;
     border: 1px solid rgb(221, 220, 220);
     border-radius: 10px;
@@ -11,7 +11,8 @@
     }
     img{
         width: 100%;
-        max-height: 200px;
+        min-height: 200px;
+        height: 200px;
     }
  
     span{
@@ -19,13 +20,30 @@
         text-align: center;
     }
     .action{
-       // display: none;
+        margin-top: 15px;
+        border: 1px solid rgb(221, 220, 220);
+       padding: 10px;
     .rtl{
         direction: rtl;
        }
+       
+    }
+    .click{
+        cursor: pointer;
+        &:hover {
+         color: $mainColor;
+       }
+    }
+    .price{
+        font-weight: bold;
+        font-size: 22px;
     }
 }
 .products{
-    margin-top: 150px;
+    margin-top: 100px;
     text-align: center;
+    .productsElements{
+        margin-top: 40px;
+        margin-bottom: 350px;
+    }
 }
