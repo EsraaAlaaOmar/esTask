@@ -14,7 +14,7 @@ const Products =({products}) =>{
      <div className='products'>
         <Container>
         <div >
-         <Link to='/add'><span className='link'> Add Product  </span></Link>
+         <Link to='/add'><span className='link'> Add a Product  </span></Link>
         </div>
         <div className='productsElements'>
             <Row>
